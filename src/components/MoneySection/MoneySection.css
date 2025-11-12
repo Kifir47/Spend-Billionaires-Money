@@ -17,12 +17,49 @@
 .money-section h1 {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     text-align: center;
+    transition: color 0.3s ease-out;
+}
+
+@keyframes moneyChange {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.05);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+@keyframes moneyChangeNormal {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.money-section h1.money-changing {
+    animation: moneyChangeNormal 0.5s ease-out;
+}
+
+.money-section h1.fixed-top.money-changing {
+    animation: moneyChange 0.5s ease-out;
 }
 
 .money-section h1.fixed-top {
     left: 50%;
     transform: translateX(-50%);
-    width: 25%;
+    width: auto;
+    min-width: 300px;
+    max-width: 90%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -30,10 +67,14 @@
         max-width: 200px;
         width: 60%;
     }
-    
+
     .money-section h1.fixed-top {
-        width: 100% !important;
-        font-size: 1.5rem !important;
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
 
