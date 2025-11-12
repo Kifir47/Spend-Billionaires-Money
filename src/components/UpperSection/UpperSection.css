@@ -1,0 +1,111 @@
+.avatar {
+    width: 200px;
+    height: 200px;
+    background-image: url('../../assets/images/billionaires/Bezos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
+    width: 60%;
+    margin-top: 2rem;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .cards-section {
+        width: 95%;
+        border-radius: 25px;
+        padding: 0.5rem;
+    }
+}
+
+.avatar::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.card {
+    margin: 1rem;
+    min-width: 250px;
+    max-width: 320px;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        min-width: 200px;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin: 0.5rem;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        margin: 0.25rem;
+    }
+}
+
+
+.card-header .image img {
+    width: 200px;
+    height: 200px;
+}
+
+.card-header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .card-header .image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+}
+
+.card-body .price-section {
+    background-color: #F7F6F6;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.price-section p {
+    margin: 0 10px;
+}
+
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    padding: 2rem;
+    justify-items: center;
+}
+
+@media (max-width: 1300px) {
+    .cards-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-area {
+        grid-template-columns: 1fr;
+    }
+}
