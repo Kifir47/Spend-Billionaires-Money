@@ -1,6 +1,6 @@
 {
   "name": "Spend Billionaires' Money",
-  "license": "MIT",
+  "license": "BSD-3-Clause license",
   "private": true,
   "version": "0.1.0",
   "type": "module",
