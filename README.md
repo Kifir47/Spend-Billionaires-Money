@@ -8,7 +8,7 @@ The game features a **cartoon-style visual design**, while maintaining the **sam
 
 ## 🖥️ Live Demo
 
-🔗 **Play it here:** [Click here](https://agent-6914d7ca8325152e16b--spendbilionairesmoney.netlify.app/)
+🔗 **Play it here:** [Click here](https://spendbilionairesmoney.netlify.app/)
 
 ## 🚀 Features
 
